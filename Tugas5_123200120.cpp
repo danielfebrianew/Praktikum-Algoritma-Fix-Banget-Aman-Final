@@ -46,6 +46,8 @@ int main(){
 
 	cout << endl;
 
+	cout << "TERIMAKASIH TELAH MENGGUNAKAN APLIKASI INI!!" << endl;
+
 	system("pause");
 	return 0;
 }
