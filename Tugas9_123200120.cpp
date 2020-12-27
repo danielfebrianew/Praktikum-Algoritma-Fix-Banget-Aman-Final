@@ -16,7 +16,6 @@ int main(){
 	int a[n], c[n];
 	int b = a[0];
 	int max, min;
-	int s = 0;
 	float r;
 
 	//--DISPLAY ANGKA--
@@ -78,9 +77,16 @@ int main(){
 			}else if(a[i] < a[i + 1]){
 				c[i] = a[i + 1] - a[i];
 			}
-		s = s + c[i];
 		}
-	cout << s << endl;
+
+		int d = c[0];
+			for(int i = 0; i < (n - 1); i++){
+				if(d < c[i]){
+					d = c[i];
+				}
+			}
+
+	cout << d << endl;
 
 	system("pause");
 	return 0;
